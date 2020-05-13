@@ -22,6 +22,7 @@ public class MRTCamera : MonoBehaviour
     void Start()
     {
         _camera = GetComponent<Camera>();
+        Debug.Log(_camera.clearFlags);
         _camera.enabled = false;
         _texture2D = new Texture2D(640, 480);
 
